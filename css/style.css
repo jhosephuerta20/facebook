@@ -104,14 +104,15 @@ header aside .inputs .inputs_text .text .txt_correo .inputtext:focus {
     border-color: #1b74e4;
     box-shadow: 0 0 0 2px #e7f3ff;
     caret-color: #1b74e4;
-    opacity: 0.5;
+    outline: none;
 }
 header aside .inputs .inputs_text .text .lux6 .txt_contraseña .inputtext:focus {
     border-color: #1b74e4;
     box-shadow: 0 0 0 2px #e7f3ff;
     caret-color: #1b74e4;
-    opacity: 0.5;
+    outline: none;
 }
+
 .txt_correo .mobile {
     display: none;
 }
@@ -160,13 +161,20 @@ header aside .inputs .inputs_text .text .lux6 .txt_contraseña .inputtext:focus 
     cursor: pointer;
     text-decoration: none;
 }
-.linea{
+.ltj2{
+    display: none;
+}
+/* .linea{
     align-items: center;
     border-bottom: 1px solid #dadde1;
     display: flex;
     margin: 20px 16px;
-    text-align: center;
+    text-align: center; */
+
+.lineaNueva{
+    display: none;
 }
+
 .cuenta_nueva {
     margin-top: 26px;
 }
@@ -243,6 +251,9 @@ ul {
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;   
 }
+.tg2{
+    display: none;
+}
 #content_curva {
     border-bottom: 1px solid #dddfe2;
     font-size: 1px;
@@ -281,6 +292,9 @@ li a:hover {
     font-size: 11px;
 }
 
+
+
+
 /* RESPONSIVE MOBILE */
 @media (min-width:320px) and (max-width:575px) {
     .title_svg .bienvenida {
@@ -288,7 +302,7 @@ li a:hover {
     }
     header {
         background-color: #fff;
-        padding: 13px 0px 0px 0px;
+        padding: 5px 0px 0px 0px;
     }
     .pagina_nueva{
         display: none;
@@ -300,18 +314,22 @@ li a:hover {
         display: grid;
         grid-template-columns: auto;
     }
+    
     .title_svg{
     box-sizing: border-box;
     margin-right: 0;
     padding-right: 0px;
     width: auto;
     }
-    /* aside .inputs{
+    aside .inputs{
         height: auto;
         width: auto;
-    } */
+    } 
     .inputs .inputs_text{
-        width: 390px;
+        box-shadow: none;
+        width: 310px;
+        margin: 0px;
+        padding: 0px;
     }
     .txt {
         background-color: #f0f2f5;
@@ -353,6 +371,82 @@ li a:hover {
     .title_svg .logo img {
         height: 35px;
         margin: 0px;
+    }
+    .inputs_text .text .txt_correo .inputtext{
+        width: 295px;
+        height: 13px;
+        margin-left: 15px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    .inputs_text .text .txt_contraseña .inputtext{
+        width: 295px;
+        height: 13px;
+        margin-left: -5px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    header aside .inputs .inputs_text .text .txt_correo .inputtext:focus {
+        border-color: #000;
+        box-shadow: 0 0 0 2px #e7f3ff;
+        caret-color: #000;
+        outline: none;
+    }
+    header aside .inputs .inputs_text .text .lux6 .txt_contraseña .inputtext:focus {
+        border-color: #000;
+        box-shadow: 0 0 0 2px #e7f3ff;
+        caret-color: #000;
+        outline: none;
+    }
+    
+    .tg button{
+        width: auto;
+    }
+    .inputs_text .text .lux6{
+        margin: 0px;
+    }
+    .tg{
+        display: none;
+    }
+    
+    .tg2 {
+        display: block;
+        padding: 4px 0px 0px 13px;
+    }
+    .tg2 button {
+        background-color: #1877f2;
+        border: none;
+        border-radius: 6px;
+        padding: 0 16px;
+        width: 300px;
+        height: 42px;
+        box-sizing: content-box;
+    }
+    .tg2 .cursor_ft2 {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 48px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .ltj{
+        display: none;
+    }
+    .ltj2 {
+        margin-left: 60px;
+        display: block;
+        margin-top:14px
+    }
+    .ltj2 a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1877f2;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
     }
 }
 
